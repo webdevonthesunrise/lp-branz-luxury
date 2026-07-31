@@ -96,7 +96,7 @@
         email:            data.get('email'),
         address:          data.get('address'),
         budget:     data.get('budget'),
-        purchase: data.get('purpose'),
+        purpose: data.get('purpose'),
         payment:   data.get('payment'),
         viewingDate:     data.get('viewingDate'),
         viewingTime:     data.get('viewingTime')
