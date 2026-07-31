@@ -81,26 +81,33 @@
   var tourForm = document.getElementById("tourForm");
   var formNote = document.getElementById("formNote");
 
+  var APPS_SCRIPT_URL = 'https://script.google.com/a/macros/onthesunrise.com/s/AKfycbxN8EqRrZH16_3KXrk5YpRCv1Q3P4urXPAZg_tUNDYMtwHKllCUxCjhiHqWIDt5GXyJsA/exec';
+
   if (tourForm) {
     tourForm.addEventListener("submit", function (e) {
       e.preventDefault();
       var data = new FormData(tourForm);
-      var lines = [
-        "Hello, I would like to schedule a tour at BRANZ Mega Kuningan.",
-        "Name: " + (data.get("name") || "-"),
-        "Phone: " + (data.get("phone") || "-"),
-        "Email: " + (data.get("email") || "-"),
-        "Address: " + (data.get("address") || "-"),
-        "Budget Range: " + (data.get("budget") || "-"),
-        "Purpose: " + (data.get("purpose") || "-"),
-        "Payment Method: " + (data.get("payment") || "-"),
-        "Preferred Viewing Date: " + (data.get("viewingDate") || "-"),
-        "Preferred Viewing Time: " + (data.get("viewingTime") || "-")
-      ];
-      var message = lines.join("\n");
 
+      // Send lead data to Google Sheet
+      var payload = {
+        sheetGid:         '89055764',
+        name:             data.get('name'),
+        phone:            data.get('phone'),
+        email:            data.get('email'),
+        address:          data.get('address'),
+        budget:     data.get('budget'),
+        purchase: data.get('purpose'),
+        payment:   data.get('payment'),
+        viewingDate:     data.get('viewingDate'),
+        viewingTime:     data.get('viewingTime')
+      };
+
+      var params = new URLSearchParams();
+      params.append('data', JSON.stringify(payload));
+      fetch(APPS_SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: params });
+
+      tourForm.reset();
       if (formNote) formNote.hidden = false;
-      window.open(waLink(message), "_blank", "noopener");
     });
   }
 })();

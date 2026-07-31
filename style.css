@@ -50,9 +50,7 @@ img,svg{ display:block; max-width:100%; }
 }
 
 /* ---------- inline icon glyphs (no external icon font needed) ---------- */
-.ico{ display:inline-block; width:14px; height:14px; vertical-align:-2px; }
-.ico-phone{ background: currentColor; -webkit-mask: radial-gradient(circle at 30% 30%, transparent 0, transparent 2px, black 3px) 0 0/100% 100%; mask: radial-gradient(circle at 30% 30%, transparent 0, transparent 2px, black 3px) 0 0/100% 100%; border-radius: 3px; }
-.ico-fb, .ico-ig{ width:16px; height:16px; border-radius:50%; border:1.5px solid currentColor; }
+.ico{ display:inline-block; width:18px; height:18px; vertical-align:-2px; }
 
 /* ---------- buttons ---------- */
 .btn{
