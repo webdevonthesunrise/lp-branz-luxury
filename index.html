@@ -13,9 +13,125 @@
     href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KJPQ9LKV');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2EQK6E65D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-K2EQK6E65D');
+  </script>
 </head>
 
 <body>
+
+  <!--
+    MAINTENANCE MODE
+    Untuk mengaktifkan kembali website:
+    1. Comment blok <main class="maintenance-page"> sampai </main> di bawah ini.
+    2. Hapus tag pembuka <template id="original-site"> dan tag penutup </template>.
+  -->
+  <main class="maintenance-page">
+    <style>
+      .maintenance-page {
+        min-height: 100vh;
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+        color: #f7f2e8;
+        text-align: center;
+        background:
+          radial-gradient(circle at 50% 20%, rgba(196, 165, 104, 0.18), transparent 34%),
+          linear-gradient(145deg, #0d2530 0%, #153d48 52%, #0b2029 100%);
+      }
+
+      .maintenance-content {
+        width: min(680px, 100%);
+      }
+
+      .maintenance-brand {
+        display: block;
+        margin-bottom: 48px;
+        color: #d8b978;
+        font: 600 clamp(1.5rem, 4vw, 2.25rem)/1.1 "Shippori Mincho", serif;
+        letter-spacing: 0.28em;
+      }
+
+      .maintenance-brand small {
+        display: block;
+        margin-top: 10px;
+        color: #f7f2e8;
+        font: 500 0.7rem/1.2 Inter, sans-serif;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+      }
+
+      .maintenance-label {
+        margin: 0 0 18px;
+        color: #d8b978;
+        font: 600 0.75rem/1.4 Inter, sans-serif;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      .maintenance-page h1 {
+        margin: 0;
+        font: 600 clamp(2.25rem, 7vw, 4.75rem)/1.08 "Shippori Mincho", serif;
+      }
+
+      .maintenance-message {
+        max-width: 540px;
+        margin: 24px auto 0;
+        color: rgba(247, 242, 232, 0.76);
+        font: 400 clamp(0.95rem, 2vw, 1.1rem)/1.8 Inter, sans-serif;
+      }
+
+      .maintenance-line {
+        width: 72px;
+        height: 1px;
+        margin: 38px auto;
+        background: #d8b978;
+      }
+
+      .maintenance-contact {
+        color: #f7f2e8;
+        font: 500 0.9rem/1.6 Inter, sans-serif;
+        text-decoration: none;
+      }
+    </style>
+
+    <div class="maintenance-content">
+      <span class="maintenance-brand">BRANZ<small>Mega Kuningan</small></span>
+      <p class="maintenance-label">Website Under Maintenance</p>
+      <h1>We&rsquo;ll Be Back Soon</h1>
+      <p class="maintenance-message">We are currently enhancing our website to serve you better. Thank you for your
+        patience, and please check back soon.</p>
+      <div class="maintenance-line" aria-hidden="true"></div>
+      <a class="maintenance-contact" href="tel:+628551111109">For enquiries: 0855-1111-109</a>
+    </div>
+  </main>
+
+  <!-- UI ASLI: tersimpan utuh dan sementara tidak dirender oleh browser. -->
+  <template id="original-site">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJPQ9LKV" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- ============ HEADER ============ -->
   <header class="site-header" id="siteHeader">
@@ -325,62 +441,320 @@
       </div>
     </section>
 
-    <!-- ============ UNIT PLAN ============ -->
+    <!-- ============ UNIT COMPARISON ============ -->
     <section class="section units" id="units">
       <div class="container">
-        <p class="eyebrow eyebrow-dark center">Unit plan</p>
-        <h2 class="center">Find a Residence That Fits Your Lifestyle</h2>
-        <p class="section-lead center">Choose from a range of layouts created for professionals, couples, families and
-          property investors.</p>
+        <p class="eyebrow eyebrow-dark center">Unit comparison</p>
+        <h2 class="center">Compare Apartments<br>Available for Purchase</h2>
+        <p class="section-lead center">Review the available layouts and select the unit that best matches your intended
+          use, household requirements and budget.</p>
 
-        <!-- Floor plan tab viewer -->
-        <div class="plan-viewer">
-          <div class="plan-tabs" id="planTabs" role="tablist">
-            <button class="plan-tab active" data-plan="3br">3 BR</button>
-            <button class="plan-tab" data-plan="2br">2 BR</button>
-            <button class="plan-tab" data-plan="2brl">2 BR L</button>
-            <button class="plan-tab" data-plan="1br1">1 BR + 1</button>
-            <button class="plan-tab" data-plan="1br">1 BR</button>
-            <button class="plan-tab" data-plan="studio">Studio</button>
+        <!-- <div class="table-wrap">
+        <table class="unit-table">
+          <thead>
+            <tr>
+              <th>Unit type</th>
+              <th>Approximate size</th>
+              <th>Starting price</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Unit type">Studio</td>
+              <td data-label="Approximate size">Ask sales team</td>
+              <td data-label="Starting price">Ask sales team</td>
+              <td data-label="Availability"><span class="tag tag-limited">Limited</span></td>
+            </tr>
+            <tr>
+              <td data-label="Unit type">1-Bedroom</td>
+              <td data-label="Approximate size">Ask sales team</td>
+              <td data-label="Starting price">Ask sales team</td>
+              <td data-label="Availability"><span class="tag tag-available">Available</span></td>
+            </tr>
+            <tr>
+              <td data-label="Unit type">1-Bedroom + 1</td>
+              <td data-label="Approximate size">Ask sales team</td>
+              <td data-label="Starting price">Ask sales team</td>
+              <td data-label="Availability"><span class="tag tag-available">Available</span></td>
+            </tr>
+            <tr>
+              <td data-label="Unit type">2-Bedroom</td>
+              <td data-label="Approximate size">Ask sales team</td>
+              <td data-label="Starting price">Ask sales team</td>
+              <td data-label="Availability"><span class="tag tag-limited">Limited</span></td>
+            </tr>
+            <tr>
+              <td data-label="Unit type">2-Bedroom Large</td>
+              <td data-label="Approximate size">Ask sales team</td>
+              <td data-label="Starting price">Ask sales team</td>
+              <td data-label="Availability"><span class="tag tag-limited">Limited</span></td>
+            </tr>
+            <tr>
+              <td data-label="Unit type">3-Bedroom</td>
+              <td data-label="Approximate size">Ask sales team</td>
+              <td data-label="Starting price">Ask sales team</td>
+              <td data-label="Availability"><span class="tag tag-available">Available</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+
+        <!-- Unit Explorer -->
+        <div class="unit-explorer">
+          <div class="unit-tabs" role="tablist">
+            <button class="unit-tab active" role="tab" aria-selected="true" data-panel="ue-3br">3 BR</button>
+            <button class="unit-tab" role="tab" aria-selected="false" data-panel="ue-2br">2 BR</button>
+            <button class="unit-tab" role="tab" aria-selected="false" data-panel="ue-2brl">2 BR L</button>
+            <button class="unit-tab" role="tab" aria-selected="false" data-panel="ue-1br1">1 BR + 1</button>
+            <button class="unit-tab" role="tab" aria-selected="false" data-panel="ue-1br">1 BR</button>
+            <button class="unit-tab" role="tab" aria-selected="false" data-panel="ue-studio">STUDIO</button>
           </div>
 
-          <div class="plan-panel">
-            <div class="plan-gallery">
-              <!-- <span class="visual-label">Interior reference &mdash; replace with official unit photos</span> -->
-              <img src="branz-mega-kuningan-bg-unitplan.jpg" alt="BRANZ Mega Kuningan interior reference"
-                class="plan-photo">
-              <!-- <img src="assets/branzmegakuninganbgunitplan.jpg" alt="BRANZ Mega Kuningan interior reference" class="plan-photo" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'plan-photo plan-photo-fallback',textContent:'Unit photo placeholder'}))"> -->
+          <!-- 3 BR -->
+          <div class="unit-panel active" id="ue-3br" role="tabpanel">
+            <div class="ue-gallery">
+              <div class="ue-main-wrap">
+                <img src="/unit-plan/3br/3br-1.webp" alt="3 Bedroom interior" class="ue-main-img" />
+                <button class="ue-nav ue-prev" aria-label="Previous image">&#8249;</button>
+                <button class="ue-nav ue-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <div class="ue-thumbs">
+                <img src="/unit-plan/3br/3br-1.webp" alt="" class="ue-thumb active" />
+                <img src="/unit-plan/3br/3br-2.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/3br/3br-3.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/3br/3br-4.webp" alt="" class="ue-thumb" />
+              </div>
             </div>
-            <div class="plan-spec" id="planSpec">
-              <h3 id="planSpecTitle">3 Bedroom</h3>
-              <dl>
+            <div class="ue-specs">
+              <h3 class="ue-unit-name">3 Bedroom</h3>
+              <dl class="ue-details">
                 <div>
                   <dt>Semi-gross Size</dt>
-                  <dd id="planSpecSize">&plusmn; 136 m&sup2;</dd>
+                  <dd>± 136 m&sup2;</dd>
                 </div>
                 <div>
-                  <dt>Middle-Zone</dt>
-                  <dd id="planSpecZone">18 &ndash; 36F</dd>
+                  <dt>Zone</dt>
+                  <dd>Middle-Zone &nbsp;18–36F</dd>
                 </div>
                 <div>
                   <dt>Bathroom</dt>
-                  <dd id="planSpecBath">2</dd>
+                  <dd>2</dd>
                 </div>
                 <div>
                   <dt>Bedroom</dt>
-                  <dd id="planSpecBed">3</dd>
+                  <dd>3</dd>
                 </div>
               </dl>
-              <a href="#" class="btn btn-outline-dark btn-block">View Floor Plan</a>
+              <a href="#" class="btn ue-floorplan-btn">View Floor Plan</a>
             </div>
           </div>
-        </div>
+
+          <!-- 2 BR -->
+          <div class="unit-panel" id="ue-2br" role="tabpanel">
+            <div class="ue-gallery">
+              <div class="ue-main-wrap">
+                <img src="/unit-plan/2br/2br-1.webp" alt="2 Bedroom interior" class="ue-main-img" />
+                <button class="ue-nav ue-prev" aria-label="Previous image">&#8249;</button>
+                <button class="ue-nav ue-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <div class="ue-thumbs">
+                <img src="/unit-plan/2br/2br-1.webp" alt="" class="ue-thumb active" />
+                <img src="/unit-plan/2br/2br-2.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/2br/2br-3.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/2br/2br-4.webp" alt="" class="ue-thumb" />
+              </div>
+            </div>
+            <div class="ue-specs">
+              <h3 class="ue-unit-name">2 Bedroom</h3>
+              <dl class="ue-details">
+                <div>
+                  <dt>Semi-gross Size</dt>
+                  <dd>± 82 m&sup2;</dd>
+                </div>
+                <div>
+                  <dt>Zone</dt>
+                  <dd>Middle-Zone &nbsp;10–36F</dd>
+                </div>
+                <div>
+                  <dt>Bathroom</dt>
+                  <dd>2</dd>
+                </div>
+                <div>
+                  <dt>Bedroom</dt>
+                  <dd>2</dd>
+                </div>
+              </dl>
+              <a href="#" class="btn ue-floorplan-btn">View Floor Plan</a>
+            </div>
+          </div>
+
+          <!-- 2 BR L -->
+          <div class="unit-panel" id="ue-2brl" role="tabpanel">
+            <div class="ue-gallery">
+              <div class="ue-main-wrap">
+                <img src="/unit-plan/2br-8/2br-l-8-1.webp" alt="2 Bedroom Large interior" class="ue-main-img" />
+                <button class="ue-nav ue-prev" aria-label="Previous image">&#8249;</button>
+                <button class="ue-nav ue-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <div class="ue-thumbs">
+                <img src="/unit-plan/2br-8/2br-l-8-1.webp" alt="" class="ue-thumb active" />
+                <img src="/unit-plan/2br-8/2br-l-5-1.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/2br-8/2br-l-7-1.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/2br-8/2br-l-4.webp" alt="" class="ue-thumb" />
+              </div>
+            </div>
+            <div class="ue-specs">
+              <h3 class="ue-unit-name">2 Bedroom Large</h3>
+              <dl class="ue-details">
+                <div>
+                  <dt>Semi-gross Size</dt>
+                  <dd>± 100 m&sup2;</dd>
+                </div>
+                <div>
+                  <dt>Zone</dt>
+                  <dd>Middle-Zone &nbsp;10–36F</dd>
+                </div>
+                <div>
+                  <dt>Bathroom</dt>
+                  <dd>2</dd>
+                </div>
+                <div>
+                  <dt>Bedroom</dt>
+                  <dd>2</dd>
+                </div>
+              </dl>
+              <a href="#" class="btn ue-floorplan-btn">View Floor Plan</a>
+            </div>
+          </div>
+
+          <!-- 1 BR + 1 -->
+          <div class="unit-panel" id="ue-1br1" role="tabpanel">
+            <div class="ue-gallery">
+              <div class="ue-main-wrap">
+                <img src="/unit-plan/1br/1br-1.webp" alt="1 Bedroom+1 interior" class="ue-main-img" />
+                <button class="ue-nav ue-prev" aria-label="Previous image">&#8249;</button>
+                <button class="ue-nav ue-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <div class="ue-thumbs">
+                <img src="/unit-plan/1br/1br-1.webp" alt="" class="ue-thumb active" />
+                <img src="/unit-plan/1br/1br-7-1.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/1br/1br-8-1.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/1br/1br-9-1.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/1br/2br-4.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/1br/2br-5.webp" alt="" class="ue-thumb" />
+              </div>
+            </div>
+            <div class="ue-specs">
+              <h3 class="ue-unit-name">1 Bedroom + 1</h3>
+              <dl class="ue-details">
+                <div>
+                  <dt>Semi-gross Size</dt>
+                  <dd>± 62 m&sup2;</dd>
+                </div>
+                <div>
+                  <dt>Zone</dt>
+                  <dd>Lower-Zone &nbsp;5–17F</dd>
+                </div>
+                <div>
+                  <dt>Bathroom</dt>
+                  <dd>1</dd>
+                </div>
+                <div>
+                  <dt>Bedroom</dt>
+                  <dd>1+1</dd>
+                </div>
+              </dl>
+              <a href="#" class="btn ue-floorplan-btn">View Floor Plan</a>
+            </div>
+          </div>
+
+          <!-- 1 BR -->
+          <div class="unit-panel" id="ue-1br" role="tabpanel">
+            <div class="ue-gallery">
+              <div class="ue-main-wrap">
+                <img src="/unit-plan/1br/1br-1.webp" alt="1 Bedroom interior" class="ue-main-img" />
+                <button class="ue-nav ue-prev" aria-label="Previous image">&#8249;</button>
+                <button class="ue-nav ue-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <div class="ue-thumbs">
+                <img src="/unit-plan/1br/1br-1.webp" alt="" class="ue-thumb active" />
+                <img src="/unit-plan/1br/1br-8-1.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/1br/1br-6-1.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/2br/2br-4.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/1br/2br-5.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/1br/1br-9-1.webp" alt="" class="ue-thumb" />
+              </div>
+            </div>
+            <div class="ue-specs">
+              <h3 class="ue-unit-name">1 Bedroom</h3>
+              <dl class="ue-details">
+                <div>
+                  <dt>Semi-gross Size</dt>
+                  <dd>± 52 m&sup2;</dd>
+                </div>
+                <div>
+                  <dt>Zone</dt>
+                  <dd>Lower-Zone &nbsp;5–17F</dd>
+                </div>
+                <div>
+                  <dt>Bathroom</dt>
+                  <dd>1</dd>
+                </div>
+                <div>
+                  <dt>Bedroom</dt>
+                  <dd>1</dd>
+                </div>
+              </dl>
+              <a href="#" class="btn ue-floorplan-btn">View Floor Plan</a>
+            </div>
+          </div>
+
+          <!-- STUDIO -->
+          <div class="unit-panel" id="ue-studio" role="tabpanel">
+            <div class="ue-gallery">
+              <div class="ue-main-wrap">
+                <img src="/unit-plan/1br/1br-1.webp" alt="Studio interior" class="ue-main-img" />
+                <button class="ue-nav ue-prev" aria-label="Previous image">&#8249;</button>
+                <button class="ue-nav ue-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <div class="ue-thumbs">
+                <img src="/unit-plan/1br/1br-1.webp" alt="" class="ue-thumb active" />
+                <img src="/unit-plan/3br/3br-2.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/2br/2br-4.webp" alt="" class="ue-thumb" />
+                <img src="/unit-plan/1br/2br-5.webp" alt="" class="ue-thumb" />
+              </div>
+            </div>
+            <div class="ue-specs">
+              <h3 class="ue-unit-name">Studio</h3>
+              <dl class="ue-details">
+                <div>
+                  <dt>Semi-gross Size</dt>
+                  <dd>± 32 m&sup2;</dd>
+                </div>
+                <div>
+                  <dt>Zone</dt>
+                  <dd>Lower-Zone &nbsp;5–17F</dd>
+                </div>
+                <div>
+                  <dt>Bathroom</dt>
+                  <dd>1</dd>
+                </div>
+                <div>
+                  <dt>Bedroom</dt>
+                  <dd>—</dd>
+                </div>
+              </dl>
+              <a href="#" class="btn ue-floorplan-btn">View Floor Plan</a>
+            </div>
+          </div>
+        </div><!-- /unit-explorer -->
 
         <p class="disclaimer">Unit sizes, prices and availability must be confirmed with the official sales team and may
           change without prior notice.</p>
 
         <div class="cta-center">
-          <a href="#" class="btn btn-primary whatsapp-link">Request Floor Plans &amp; Price List</a>
+          <a href="#" class="btn btn-primary">Get Complete Price List via WhatsApp</a>
         </div>
       </div>
     </section>
@@ -544,7 +918,8 @@
       <div class="footer-col">
         <h4>Social Media</h4>
         <div class="footer-social">
-          <a href="tel:+628551111109" aria-label="Phone"><img src="phone-call-alt-1-svgrepo-com.svg" alt="" class="ico"></a>
+          <a href="tel:+628551111109" aria-label="Phone"><img src="phone-call-alt-1-svgrepo-com.svg" alt=""
+              class="ico"></a>
           <a href="https://www.facebook.com/branzmegakuninganofficial" target="_blank" rel="noopener"
             aria-label="Facebook"><img src="facebook-logo-meta-2-svgrepo-com.svg" alt="" class="ico"></a>
           <a href="https://www.instagram.com/branzmkofficial/" target="_blank" rel="noopener"
@@ -571,6 +946,10 @@
   </a>
 
   <script src="script.js"></script>
+
+  </template>
+  <!-- AKHIR UI ASLI -->
+
 </body>
 
 </html>
